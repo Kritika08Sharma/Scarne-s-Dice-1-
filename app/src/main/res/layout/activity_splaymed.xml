@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.app1.scarnesdice4.Splaymed"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score : 0    Computer Score : 0"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text1"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="22dp"
+        android:textColor="#ff0000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Turn Score : 0"
+        android:id="@+id/text2"
+        android:textColor="#ff0000"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="22dp"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:src="@drawable/dice1"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/Img1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        android:id="@+id/Img2"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="308dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:text="ROLL"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/Roll"
+        android:layout_alignBaseline="@+id/Reset"
+        android:layout_alignBottom="@+id/Reset"
+        android:layout_toLeftOf="@+id/text2"
+        android:layout_toStartOf="@+id/text2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        tools:layout_editor_absoluteY="308dp"
+        tools:layout_editor_absoluteX="291dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/Reset"
+        android:background="@drawable/button"
+        android:layout_alignBaseline="@+id/Hold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOLD"
+        android:background="@drawable/button"
+        tools:layout_editor_absoluteY="308dp"
+        tools:layout_editor_absoluteX="157dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="44dp"
+        android:id="@+id/Hold"
+        android:layout_above="@+id/Back3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Display"
+        android:layout_marginBottom="41dp"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:layout_above="@+id/Reset"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text3" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:id="@+id/Back3"/>
+
+
+
+</RelativeLayout>

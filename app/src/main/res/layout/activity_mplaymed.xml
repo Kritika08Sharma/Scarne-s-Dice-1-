@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.app1.scarnesdice4.Mplaymed"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Player1 Score : 0    Player2 Score : 0"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:id="@+id/MtextView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player1 TurnScore : 0"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#ff0000"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/MtextView1"
+        android:id="@+id/MtextView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player2 TurnScore : 0"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#ff0000"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/MtextView2"
+        android:id="@+id/MtextView3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MtextView3"
+        android:src="@drawable/dice1"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/Img1"
+        android:layout_marginBottom="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        android:id="@+id/Img2"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/MtextView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Display"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:id="@+id/text3"
+        android:layout_below="@+id/Img2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/Roll"
+        android:layout_below="@+id/Img1"
+        android:layout_alignLeft="@+id/MtextView1"
+        android:layout_alignStart="@+id/MtextView1"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_below="@+id/Img2"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@drawable/button"
+        android:id="@+id/Reset"
+        android:layout_alignBaseline="@+id/Hold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOLD"
+        tools:layout_editor_absoluteY="308dp"
+        tools:layout_editor_absoluteX="157dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/Hold"
+        android:background="@drawable/button"
+        android:layout_alignBaseline="@+id/Roll"
+        android:layout_alignBottom="@+id/Roll"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:id="@+id/Back5"/>
+
+
+
+</RelativeLayout>

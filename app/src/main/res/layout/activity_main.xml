@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.app1.scarnesdice4.MainActivity"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="SCARNE'S DICE"
+        android:textColor="#000000"
+        android:background="#ff0000"
+        android:id="@+id/textView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Player"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:id="@+id/Splay"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/Mulplay"
+        android:layout_alignStart="@+id/Mulplay" />
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Single Dice"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:textColor="#000000"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/Splayeasy"
+        android:layout_below="@+id/Splay"
+        android:layout_alignLeft="@+id/Splaymod"
+        android:layout_alignStart="@+id/Splaymod" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Dual Dice"
+        android:textColor="#000000"
+        android:layout_below="@+id/Splayeasy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:id="@+id/Splaymod"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Two Player"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:textColor="#ff0000"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Mulplay"
+        android:layout_below="@+id/Splaymod"/>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Single Dice"
+        android:textColor="#000000"
+        android:layout_below="@+id/Mulplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:id="@+id/Mplayeasy"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Dual Dice"
+        android:background="@drawable/button"
+        android:textColor="#000000"
+        android:layout_below="@+id/Mplayeasy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/Mplaymod"/>
+
+</RelativeLayout>
